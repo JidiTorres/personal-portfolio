@@ -1,6 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+import projImg1 from "../assets/img/project-img1.png"
+import projImg4 from "../assets/img/youtube-channel-img.png"
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -11,34 +12,40 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Music Production",
+      description: "Youtube Channel",
+      imgUrl: projImg4,
+      link: "https://www.youtube.com/channel/UC2-vag6zSNJnnjWv7hVh8sA",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      link: "",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      link: "",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      link: "",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      link: "",
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      link: "",
     },
   ];
 
@@ -79,7 +86,7 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
+                    <Tab.Pane eventKey="second">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
