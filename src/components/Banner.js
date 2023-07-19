@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Music Producer" ];
+  const toRotate = [ "Web Developer", "Music Producer", "App Developer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Jean-Dominique`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Music Producer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am a Music Producer and Web Developer passionate about creativity. In the realm of music, I enjoy creating unique compositions that evoke emotions. As a Web Developer, I channel this creativity into designing aesthetic and innovative websites. My portfolio showcases my commitment to pushing artistic and technical boundaries in these two complementary domains. Together, let's bring to life distinctive and memorable projects.</p>
+                  <p>Welcome to my portfolio, where I showcase a harmonious blend of my passion for music production, web development, and app development. As a Music Producer, I create emotive and one-of-a-kind compositions. Meanwhile, as a Web and App Developer, I channel my creativity into crafting aesthetic and innovative digital experiences. Together, these projects reflect my dedication to pushing the boundaries of artistry and technology, resulting in distinctive and memorable creations.</p>
                 
               </div>}
             </TrackVisibility>
