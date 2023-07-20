@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Music Producer", "App Developer" ];
+  const toRotate = [ "Web Dev", "Music Prod", "Mobile App Dev" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,8 +56,10 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Jean-Dominique`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Music Producer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Welcome to my portfolio, where I showcase a harmonious blend of my passion for music production, web development, and app development. As a Music Producer, I create emotive and one-of-a-kind compositions. Meanwhile, as a Web and App Developer, I channel my creativity into crafting aesthetic and innovative digital experiences. Together, these projects reflect my dedication to pushing the boundaries of artistry and technology, resulting in distinctive and memorable creations.</p>
+                <h1>{`Hi! I'm Jean-Dominique`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Dev", "Music Prod", "Mobile App Dev" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>
+                      Welcome to my portfolio as a Music Producer, Web Developer, and Mobile App Developer. Here, you'll have the opportunity to explore a showcase of my diverse projects, each offering a glimpse into my expertise and passion across different domains. From mesmerizing music productions that stir emotions to captivating websites with seamless user experiences, and innovative mobile apps that cater to modern needs, my portfolio offers a visual journey through my creative and technical capabilities. Dive in and discover the fusion of artistry and technology that defines my work as a versatile professional in the world of music production and software development.
+                  </p>
                 
               </div>}
             </TrackVisibility>
